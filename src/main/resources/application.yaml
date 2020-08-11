@@ -1,9 +1,10 @@
+server:
+  #服务提供者端口号
+  port: 40001
 spring:
   application:
-    name: eurekaClient
-server:
-  port: 8081
+    name: ServerProvide
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1111/eureka
+      defaultZone: http://eurekaserver1:30001/eureka/
