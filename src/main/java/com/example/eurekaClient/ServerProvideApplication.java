@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class EurekaClientApplication {
+public class ServerProvideApplication {
 
 	@RequestMapping("/")
 	public String home() {
@@ -17,7 +17,7 @@ public class EurekaClientApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClientApplication.class, args);
+		SpringApplication.run(ServerProvideApplication.class, args);
 	}
 
 }
